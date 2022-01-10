@@ -27,7 +27,6 @@ def switch(gpio, broker_ip, broker_port, topic, message_high, message_low, user,
 
     interference_burst_protect = 0.1
 
-
     # Setup GPIO - pull up to reduce interference
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(gpio_id, GPIO.IN, pull_up_down=GPIO.PUD_UP)
